@@ -1,7 +1,7 @@
 export const CatchMov = ({ show }) => {
   return (
     <div>
-      <div> {show.image && <img src={show.image.medium} alt={show.name} />}</div>
+      <a href={show.url}><div> {show.image && <img src={show.image.medium} alt={show.name} />}</div></a>
       <div>
         <h2>{show.name}</h2>
         <p>Genres: {show.genres[0]}, {show.genres[1]}</p>
