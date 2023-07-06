@@ -6,12 +6,12 @@ export const Home = () => {
   const [data, setData] = useState([])
 
   const sendSearch = (search) => {
-    fetch(`https://api.tvmaze.com/singlesearch/shows?q=${search}`)
+    fetch(`https://api.tvmaze.com/search/shows?q=${search}`)
       .then((response) => {
         return response.json()
       }).then((movieInf) => {
         console.log(movieInf)
-        setData(movieInf.data)
+        setData(movieInf)
       }).catch((error) => {
         console.error(error)
       })
