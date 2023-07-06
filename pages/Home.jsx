@@ -22,7 +22,7 @@ export const Home = () => {
       <div className='search-container'>
         <SearchbarHome handleSearch={sendSearch} />
       </div>
-      <div className='table-movies'>
+      <div className='table'>
         {
         data.map((item) => (
           <CatchMov key={item.id} {...item} />

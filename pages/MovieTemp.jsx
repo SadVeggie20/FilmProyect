@@ -1,7 +1,7 @@
-import React from 'react'
-
 export const MovieTemp = () => {
   return (
-    <div>MovieTemp</div>
+    <div>
+      <h1>MovieTemp</h1>
+    </div>
   )
 }
