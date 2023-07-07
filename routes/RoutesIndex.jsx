@@ -7,7 +7,7 @@ export const RoutesIndex = () => {
   return (
     <Routes>
       <Route path='/' element={<Home />} />
-      <Route path='/MoviePage' element={<MovieTemp />} />
+      <Route path='/Series/:seriesId' element={<MovieTemp />} />
       <Route path='*' element={<NotFound />} />
     </Routes>
   )
